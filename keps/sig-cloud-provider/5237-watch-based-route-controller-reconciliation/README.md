@@ -197,7 +197,8 @@ Two fields are relevant for determining whether a reconcile should occur:
 
 #### Beta
 
-- Multiple infrastructure provider have enabled the feature flag, and we are confident that the field selectors are correct.
+- A non-gated metric (`route_controller_route_sync_total`) is available to A/B test the feature's impact on the number of route reconciliations.
+- A gated metric is available to track the number of route corrections made during periodic reconciles.
 
 #### GA
 
